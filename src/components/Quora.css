@@ -1,0 +1,48 @@
+.quora {
+    width: "100%";
+    min-width: fit-content;
+  }
+  
+  .quora__contents {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+  
+  .quora__content {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    padding: 0px 10px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .react-responsive-modal-modal {
+    width: 90vw;
+    height: 90vh;
+  }
+  
+  .quill {
+    height: 50vh;
+  }
+  
+  .react-responsive-modal-overlay {
+    background: rgb(0 0 0 / 75%);
+  }
+
+  
+  @media only screen and (max-width: 600px){
+
+      .quora__content{
+        grid-template-columns: 1fr;
+      }
+      .quora_sidebar {
+        display: none;
+      }
+      .quora_widget{
+        display: none;
+      }
+  }
